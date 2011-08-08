@@ -16,7 +16,7 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/rossnelson/imdb_api"
   gem.license = "MIT"
   gem.summary = %Q{IMDB api parser}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.description = %Q{utilize imdbapi.com to retrive movie info}
   gem.email = "axcess1@me.com"
   gem.authors = ["rossnelson"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
