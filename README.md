@@ -2,7 +2,7 @@ imdb_api
 =====
 
 IMDB search funtionality through http://imdbapi.com  
-loosley based around the imdb gem
+Based around the imdb gem
 
     search = Imdb::Search.new(:title => "Back to the Future", :year => "1985")
     => #<Imdb::Search:0x000001029c6f78 @query={:title=>"Back to the Future", :year=>"1985"}>
