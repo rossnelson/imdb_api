@@ -4,7 +4,7 @@ module Imdb
     ##
     # Turn Any hash into attributes of a class
     #
-    # Imdb::Movie.new({"Title"=>"Darkwing Duck", "Year"=>"1991"})
+    # Imdb::Movie.new({:Title => "Darkwing Duck", :Year => "1991"})
     #
     def initialize(attributes)
       attributes.each do |k,v|
