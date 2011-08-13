@@ -29,10 +29,10 @@ module Imdb
     end
 
     ##
-    # Bulid url from @query hash
+    # Bulid url from Imdb::search instance @query attribute
     #
     def query_string(query)
-      "http://www.imdbapi.com/?t=#{CGI::escape(query[:title])}&y=#{CGI::escape(query[:year]) unless query[:year].blank?}"
+      "http://www.imdbapi.com/?t=#{CGI::escape(query[:title])}&y=#{CGI::escape(query[:year]) unless query[:year].nil?}"
     end
 
     ##
