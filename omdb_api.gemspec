@@ -4,13 +4,13 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{imdb_api}
+  s.name = %q{omdb_api}
   s.version = "0.0.6"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["rossnelson"]
   s.date = %q{2011-08-12}
-  s.description = %q{utilize imdbapi.com to retrive movie info}
+  s.description = %q{utilize omdbapi.com to retrive movie info}
   s.email = %q{axcess1@me.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -24,21 +24,21 @@ Gem::Specification.new do |s|
     "README.md",
     "Rakefile",
     "VERSION",
-    "imdb_api.gemspec",
-    "lib/imdb/movie.rb",
-    "lib/imdb/search.rb",
-    "lib/imdb_api.rb",
+    "omdb_api.gemspec",
+    "lib/omdb/movie.rb",
+    "lib/omdb/search.rb",
+    "lib/omdb_api.rb",
     "test/helper.rb",
-    "test/test_imdb_api.rb"
+    "test/test_omdb_api.rb"
   ]
-  s.homepage = %q{http://github.com/rossnelson/imdb_api}
+  s.homepage = %q{http://github.com/rossnelson/omdb_api}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
   s.summary = %q{IMDB api parser}
   s.test_files = [
     "test/helper.rb",
-    "test/test_imdb_api.rb"
+    "test/test_omdb_api.rb"
   ]
 
   if s.respond_to? :specification_version then

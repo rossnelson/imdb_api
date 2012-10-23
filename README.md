@@ -1,22 +1,22 @@
-imdb_api
+omdb_api
 =====
 
-IMDB search funtionality through http://imdbapi.com  
-Based around the imdb gem
+OMDB search funtionality through http://omdbapi.com  
+Based around the omdb gem
 
 
 Install
 =====
 
-	gem "imdb_api", :git => "git://github.com/rossnelson/imdb_api.git"
+	gem "omdb_api", :git => "git://github.com/rossnelson/omdb_api.git"
 
 Usage
 =====
 
-    search = Imdb::Search.new(:title => "Back to the Future", :year => "1985")
-    => #<Imdb::Search:0x000001029c6f78 @query={:title=>"Back to the Future", :year=>"1985"}>
+    search = Omdb::Search.new(:title => "Back to the Future", :year => "1985")
+    => #<Omdb::Search:0x000001029c6f78 @query={:title=>"Back to the Future", :year=>"1985"}>
     search.movie
-    => #<Imdb::Movie:0x000001029a24e8 @title="Back to the Future", @year="1985", @rated="PG", @rele...
+    => #<Omdb::Movie:0x000001029a24e8 @title="Back to the Future", @year="1985", @rated="PG", @rele...
     search.movie.title
     => "Back to the Future"
 
@@ -39,7 +39,7 @@ list of available movie attributes
 :id,
 :response
 
-Contributing to imdb_api
+Contributing to omdb_api
 =====
 
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet

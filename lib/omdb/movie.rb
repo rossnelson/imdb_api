@@ -1,10 +1,10 @@
-module Imdb
+module Omdb
   class Movie
 
     ##
     # Turn Any hash into attributes of a class
     #
-    #   Imdb::Movie.new({:title => "Darkwing Duck", :year => "1991"})
+    #   Omdb::Movie.new({:title => "Darkwing Duck", :year => "1991"})
     #
     def initialize(attributes)
       attributes.each do |k,v|

@@ -12,11 +12,11 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "imdb_api"
-  gem.homepage = "http://github.com/rossnelson/imdb_api"
+  gem.name = "omdb_api"
+  gem.homepage = "http://github.com/rossnelson/omdb_api"
   gem.license = "MIT"
   gem.summary = %Q{IMDB api parser}
-  gem.description = %Q{utilize imdbapi.com to retrive movie info}
+  gem.description = %Q{utilize omdbapi.com to retrive movie info}
   gem.email = "axcess1@me.com"
   gem.authors = ["rossnelson"]
   gem.add_runtime_dependency 'json', '>= 1.5.3'
@@ -44,7 +44,7 @@ RDoc::Task.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "imdb_api #{version}"
+  rdoc.title = "omdb_api #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
