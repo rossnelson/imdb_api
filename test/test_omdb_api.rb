@@ -17,17 +17,17 @@ class TestOmdbApi < Test::Unit::TestCase
   end
 
    should "Keys should equal those listed" do
-    keys = [:@title, :@year, :@rated, :@released, :@genre, :@director, :@writer, :@actors, :@plot, :@poster, :@runtime, :@rating, :@votes, :@id, :@response]
+    keys = [:@title, :@year, :@rated, :@released, :@genre, :@director, :@writer, :@actors, :@plot, :@poster, :@runtime, :@imdbrating, :@imdbid, :@imdbvotes, :@response]
 
-    search = Omdb::Search.new({:title => "Back to the future"})
+    search = Omdb::Search.new({:title => "True Grit"})
     keys.each do |key|
       assert_equal true, search.movie.instance_variables.include?(key), "#{key} was not found in this Class"
     end
   end
 
-  should "return Parse Error" do
+  should "return False" do
     search = Omdb::Search.new({:title => ""})
-    assert_equal search.movie.response, "Parse Error"
+    assert_equal search.movie.response, "False"
   end
 
   should "be able to pass any hash as attriubtes into ImDB::Movie" do
