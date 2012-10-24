@@ -4,6 +4,6 @@ require 'net/http'
 require 'uri'
 require 'cgi'
 
-require File.join(ROOT, 'omdb', 'version'
+require File.join(ROOT, 'omdb', 'version')
 require File.join(ROOT, 'omdb', 'search')
 require File.join(ROOT, 'omdb', 'movie')
