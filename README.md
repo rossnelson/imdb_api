@@ -2,7 +2,7 @@
 
 OMDB search funtionality through http://omdbapi.com
 
-Why? You may ask. isnt there already an [OMDB](https://github.com/jvanbaarsen/omdb) gem? Well this was an project I built in pure self education. I wanted to understand how to access an remote api with Ruby. So now this exists.
+Why? You may ask. Isn't there already an [OMDB](https://github.com/jvanbaarsen/omdb) gem? Well this was an project I built in pure self education. I wanted to understand how to access an remote api with Ruby. So now this exists.
 
 ## Install
 
