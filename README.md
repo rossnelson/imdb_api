@@ -1,28 +1,27 @@
-omdb_api
-=====
+## Omdb API
 
-OMDB search funtionality through http://omdbapi.com  
-Based around the omdb gem
+OMDB search funtionality through http://omdbapi.com
 
+Why? You may ask. isnt there already an [OMDB](https://github.com/jvanbaarsen/omdb) gem? Well this was an project I built in pure self education. I wanted to understand how to access an remote api with Ruby. So now this exists.
 
-Install
-=====
+## Install
 
-	gem "omdb_api", :git => "git://github.com/rossnelson/omdb_api.git"
+`gem "omdb_api", :git => "git://github.com/rossnelson/omdb_api.git"`
 
-Usage
-=====
+## Usage
 
-    search = Omdb::Search.new(:title => "Back to the Future", :year => "1985")
-    => #<Omdb::Search:0x000001029c6f78 @query={:title=>"Back to the Future", :year=>"1985"}>
-    search.movie
-    => #<Omdb::Movie:0x000001029a24e8 @title="Back to the Future", @year="1985", @rated="PG", @rele...
-    search.movie.title
-    => "Back to the Future"
+~~~
+search = Omdb::Search.new(:title => "Back to the Future", :year => "1985")
+=> #<Omdb::Search:0x000001029c6f78 @query={:title=>"Back to the Future", :year=>"1985"}>
+search.movie
+=> #<Omdb::Movie:0x000001029a24e8 @title="Back to the Future", @year="1985", @rated="PG", @rele...
+search.movie.title
+=> "Back to the Future"
+~~~
 
 list of available movie attributes
--
 
+~~~
 :title,
 :year,
 :rated,
@@ -38,20 +37,9 @@ list of available movie attributes
 :votes,
 :id,
 :response
+~~~
 
-Contributing to omdb_api
-=====
-
-* Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
-* Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
-* Fork the project
-* Start a feature/bugfix branch
-* Commit and push until you are happy with your contribution
-* Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
-* Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
-
-Copyright
-======
+## Copyright
 
 Copyright (c) 2011 rossnelson. See LICENSE.txt for
 further details.
